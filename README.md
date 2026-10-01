@@ -57,8 +57,8 @@ Python · LangGraph (with `MemorySaver` checkpointing) · FastAPI · SQLite · s
 ## Setup
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+python3 -m venv .venv && source .venv/bin/activate   # Python 3.11 or newer
+pip install -r requirements.txt   # pinned, tested versions
 uvicorn app.api:app --reload        # terminal 1
 streamlit run ui/streamlit_app.py   # terminal 2
 ```
